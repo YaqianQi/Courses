@@ -3,11 +3,11 @@
 
 <br/>
 <p>1.Big Data Specialization<br/>
-1.Introduction to Big Data<br/>
-</pre></pre>2.Big Data Modeling and Management System</pre></pre>
-</pre></pre>3.Big Data Integration and Processing </pre>
+</pre>1.Introduction to Big Data</pre>
+</pre>2.Big Data Modeling and Management System</pre>
+</pre>3.Big Data Integration and Processing </pre>
 </pre>4.Machine learning with Big Data</pre>
-</pre>5.Graph Analytics for Big Data<p></pre> 
+</pre>5.Graph Analytics for Big Data</pre> 
 <br/>
 
 <br/>2.NLP<br/>
