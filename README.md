@@ -9,6 +9,8 @@
 <space><br/><space>-Graph Analytics for Big Data <br/>
 <br/>
 <br/>2.NLP<br/>
+  <space><br/><space>-CS224 Standford University<br/>
+  <space><br/><space>-National Research University Higher School of Economics<br/>
 <br/>3.Bayesian Analysis<br/>
 <br/>4.Deep Learning Specialization <br/>
 
