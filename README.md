@@ -18,5 +18,5 @@
 <br/>
     
 <br/>5.Machine Learning <br/>
-  <space><br/><space>-CS224 University of Washington :Regression, classification, clustering<br/>
+  <space><br/><space>-University of Washington :Regression, classification, clustering<br/>
 
