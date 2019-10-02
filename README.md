@@ -20,5 +20,5 @@
 <br/>5.Machine Learning <br/>
   <space><br/><space>-University of Washington :Regression, classification, clustering<br/>
 <br/>
-<br/* Data Scientist Cheet Sheet<br/>
+<br/>* Data Scientist Cheet Sheet<br/>
 
