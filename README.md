@@ -4,7 +4,8 @@
 <br/>1.Big Data Specialization<br/>
 <space><br/><space>-Introduction to Big Data: HDFS <br/>
 <space><br/><space>-Big Data Modeling and Management System <br/>
-<space><br/><space>-Big Data Integration and Processing: NoSQL, MongoDB <br/>
+<space><br/><space>-Big Data Integration and Processing<br/>
+ <space><br/><space><space>-Postgres, MongoDB, Pandas <br/>
 <space><br/><space>-Machine learning with Big Data: Apache Spark <br/>
 <space><br/><space>-Graph Analytics for Big Data <br/>
 <br/>
