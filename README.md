@@ -1,4 +1,4 @@
-# Coursera
+# Courses
 ## Lectures, quiz, assignments
 
 <br/>1.Big Data Specialization<br/>
