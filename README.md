@@ -11,6 +11,10 @@
 <br/>2.NLP<br/>
   <space><br/><space>-CS224 Standford University<br/>
   <space><br/><space>-National Research University Higher School of Economics<br/>
+  <space><br/><space>-ILLINOIS University<br/>
+<br/>
+<br/>3.Data Mining Specialization:ILLINOIS University <br/>
+  <space><br/><space>-Data Mining and Analytics<br/>
 <br/>
 <br/>3.Bayesian Analysis<br/>
 <br/>
