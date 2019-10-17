@@ -16,12 +16,12 @@
 <br/>3.Data Mining Specialization:ILLINOIS University <br/>
   <space><br/><space>-Data Mining and Analytics<br/>
 <br/>
-<br/>3.Bayesian Analysis<br/>
+<br/>4.Bayesian Analysis<br/>
 <br/>
-<br/>4.Deep Learning Specialization <br/>
+<br/>5.Deep Learning Specialization <br/>
 <br/>
     
-<br/>5.Machine Learning <br/>
+<br/>6.Machine Learning <br/>
   <space><br/><space>-University of Washington :Regression, classification, clustering<br/>
 <br/>
 <br/>* Data Scientist Cheet Sheet<br/>
