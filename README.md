@@ -23,5 +23,10 @@
 <br/>6.Machine Learning <br/>
   <space><br/><space>-University of Washington :Regression, classification, clustering<br/>
 <br/>
+  
+  <br/>7.Advanced Machine Learning : National Research University Higher School of Economics <br/>
+  <space><br/><space>-Introduction to Deep Learning<br/>
+  <space><br/><space>-NLP<br/>
+<br/>
 <br/>* Data Scientist Cheet Sheet<br/>
 
