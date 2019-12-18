@@ -28,5 +28,10 @@
   <space><br/><space>-Introduction to Deep Learning<br/>
   <space><br/><space>-NLP<br/>
 <br/>
+  
+  <br/>8.Accelerated Computer Science Fundamentals : University of Illinois at Urbana-Champaign <br/>
+  <space><br/><space>-Object-Oriented Data Structures in C++<br/>
+  <space><br/><space>-Ordered Data Structure<br/>
+<br/>
 <br/>* Data Scientist Cheet Sheet<br/>
 
