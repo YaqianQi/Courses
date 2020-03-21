@@ -1,6 +1,9 @@
 # 最大标题
 ## 第二大标题
 ###### 最小标题
+
+insert some picture 
+![avatar] (C:/Users/Alici/Desktop/how works.PNG)
 ** 这是粗体文字 **
 *这是斜体文字*
 ~~ 这是错误文本~~
