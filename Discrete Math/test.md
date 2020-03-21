@@ -2,8 +2,6 @@
 ## 第二大标题
 ###### 最小标题
 
-insert some picture 
-![avatar] (C:/Users/Alici/Desktop/how works.PNG)
 ** 这是粗体文字 **
 *这是斜体文字*
 ~~ 这是错误文本~~
@@ -14,6 +12,10 @@ git status
 git add
 git commit
 ```
+> We are going to try some formula 
+$$ x + b = c$$
+$$ frac(a+b){2}$$
+[公式指南](https://juejin.im/post/5a6721bd518825733201c4a2)
 [mark down 书写指南](https://help.github.com/cn/github/writing-on-github/basic-writing-and-formatting-syntax)
 
 1. First list item
