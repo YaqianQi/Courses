@@ -1,7 +1,7 @@
 # Courses
 ## Lectures, quiz, assignments, certifications
 
-<br/>1.Big Data Specialization<br/>
+-[x] 1.Big Data Specialization<br/>
 <space><br/><space>-Introduction to Big Data: HDFS <br/>
 <space><br/><space>-Big Data Modeling and Management System: DBMS, BDMS <br/>
 <space><br/><space>-Big Data Integration and Processing: Postgres, MongoDB, Pandas <br/>
