@@ -1,5 +1,7 @@
 # Courses
 ## Lectures, quiz, assignments, certifications
+- [x] 1.Big Data Specialization
+
 
 -[x] 1.Big Data Specialization<br/>
 <space><br/><space>-Introduction to Big Data: HDFS <br/>
