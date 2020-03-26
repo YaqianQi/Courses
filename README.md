@@ -34,13 +34,13 @@
 
 
 - [x] 7. Discrete Math
-      - Basic Combinatorics
-      - Advanced Combinatorics
-      - Discrete Probability
-      - Introduction to Graphs
-      - Basic Graph Parameters
-      - Graphs of Social Networks
-      
+- Basic Combinatorics
+- Advanced Combinatorics
+- Discrete Probability
+- Introduction to Graphs
+- Basic Graph Parameters
+- Graphs of Social Networks
+
 - [x] 8. Python Basic 
 
 *Data Scientist Cheet Sheet*
