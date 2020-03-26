@@ -1,5 +1,5 @@
 # Courses
-## Lectures, quiz, assignments, certifications
+## Lectures, Quiz, Assignments and Certifications
 - [x] 1. Big Data Specialization
 > - [x] Introduction to Big Data: HDFS
 > - [x] Big Data Modeling and Management System: DBMS, BDMS
