@@ -5,7 +5,7 @@
 > - [x] Big Data Modeling and Management System: DBMS, BDMS
 > - [x] Big Data Integration and Processing: Postgres, MongoDB, Pandas
 > - [x] Machine learning with Big Data: Apache Spark
-> - [] Graph Analytics for Big Data
+> - [ ] Graph Analytics for Big Data
 
 - [x] 2.NLP
 > - [x] CS224 Standford University
@@ -19,7 +19,7 @@
 > - [x] Neural Networks and Deep Learning(Andrew Ng)
 > - [x] Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization(Andrew Ng)
 > - [x] Structuring Machine Learning Projects(Andrew Ng)
-> - [] Convolutional Neural NetworksAndrew Ng)
+> - [ ] Convolutional Neural NetworksAndrew Ng)
 > - [x] Sequence Models(Andrew Ng)
 
 
