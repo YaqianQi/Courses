@@ -4,7 +4,7 @@
 **Qeury Language**
 **Database Programming Language**
  - Structure Database: 
-   -SQL Overview and Syntax  
+   - SQL Overview and Syntax  
    - Practice: Querying Relational Data with Postgres
  - Semistructured Database: MongoDB 
    - Syntax
@@ -88,6 +88,20 @@
        - shuffle and sort: parallelization over intermediate data 
        - Reduce: parallezation over data group 
  - Data Transformations 
+   - Map: Apply same operation to each member of a collection 
+   - Reduce: collecting things that have same 'key'
+   - cross/cartesian: Do some process to each pair from two sets 
+   - match/join: Do some process to each pair from two sets - which have same key.
+   - Go-Group: group common items 
+   - Fileter: select elements that match a criteria 
+ - Aggregations in Big Data Pipeline 
+   - What is aggregation: 
+     - group by, average, min, max, standard deviation, and, or, 
+     - union, intersection, difference, concatenation
+ - Analytical Operations: Pattern -> insights -> Decision 
+ 
+ 
+   
  
 
  
