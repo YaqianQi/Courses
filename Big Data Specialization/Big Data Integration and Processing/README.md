@@ -73,5 +73,23 @@
    }
    ])
    ```
+   - Practice Query Documents in MongoDB 
+   - Exploring pandas dataframe 
  
+## Information Integration 
+- Data Fusion: Using data from subset of souces find the true value or true value distribution of a data item
+
+## Processing Big Data 
+- A Dataflow Approach 
+  - word count
+    - map and reduce application 
+    - "split -> map -> shuffle and sort" -> reduce == "split -> Do something -> merge"
+       - map: parallelization over the input 
+       - shuffle and sort: parallelization over intermediate data 
+       - Reduce: parallezation over data group 
+ - Data Transformations 
  
+
+ 
+
+
