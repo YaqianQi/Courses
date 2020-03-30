@@ -21,6 +21,57 @@
      - find 2nd and 3rf element of tags 
      `db.inventory.find({},{tags:{$slice:[1,2]}) -- skip 1, and return 2 rows`
      - find document whose 2nd element in tag is "summer`db.inventory.find(tags.1:"summer")`
- 
+   - Compound Statement 
+     ```
+     select * from inventory where (price = 3.99 or price = 4.99) and item !="Coors"
+     ----------------------------------------------------------------------------
+     db.inventory.find({
+     $and :[
+     {$or:[{price:3.99},{price:4.99}]},
+     {item:{$ne:"Coors"}}
+     ]
+     })
+     ```
+   - On Counting and Distinct 
+   ```
+   select count(*) from Drinker 
+   db.Drinker.count()
+   ----------------------------------------
+   select count(distinct addr) from Drinkers
+   db.Drinker.count(addr:{$exists:true})
+   ------------------------------------------
+   select dictinct(places) from coutryDB
+   db.countryDB.distinct(places) -- return [USA, France, Spain, UK]
+   db.countryDB.distinct(places).length -- return 4
+   
+   ```
+   - Aggregation Framework: grouping, sorting, aggregating framework 
+   ```
+   select cust_id as id, sum(amount) as total
+   from order 
+   where status = 'A'
+   group by cust_id
+   -----------------------------------------------
+   db.order.aggregate([
+   {$match: {status: 'A'}},
+   {$group: {_id:"$cust_id",total:{$sum:"$amount"}}}
+   ])
+   ```
+   - Join 
+   ```
+   select * from orders o
+   join inventory i
+   on o.item = i.sku
+   --------------------------
+   db.orders.aggregate([
+      {$lookup:
+      {from: "inventory",
+      localField: "item",
+      foreignField: "sku",
+      as: "inventory_docs"
+      }
+   }
+   ])
+   ```
  
  
