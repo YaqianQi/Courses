@@ -93,7 +93,7 @@
    - cross/cartesian: Do some process to each pair from two sets 
    - match/join: Do some process to each pair from two sets - which have same key.
    - Go-Group: group common items 
-   - Fileter: select elements that match a criteria 
+   - Filter: select elements that match a criteria 
  - Aggregations in Big Data Pipeline 
    - What is aggregation: 
      - group by, average, min, max, standard deviation, and, or, 
