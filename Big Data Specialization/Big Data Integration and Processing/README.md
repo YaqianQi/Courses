@@ -202,7 +202,6 @@ more count.txt
       - collect(): copy all elements to the driver 
       - reduce(function): aggregate elements with function 
  4. Spark SQL 
- - Spark SQL
    - Why:
      - Enable querying structured and unstructured aata 
      - provide common query language
