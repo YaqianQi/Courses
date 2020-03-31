@@ -284,6 +284,52 @@ more count.txt
      - Transformation(window size: 4, sliding interval:2) [b1,b2],[b2,b3],[b3,b4],[b4,b5](How many entries in 1 unit; how many entris needs to move to next)
 7. **Spark GraphX**
    - GraphX is api for graphs and graph-parallel computation 
+8. **Spark Practice** 
+   ```
+   # connect to postgres table 
+   
+   from pyspark.sql import SQLContext 
+   sqlcs = SQLContext(sc)
+   df = sqlcs.read.format("jdbc")\
+        .option("url","jdbc:postgresql://..)\
+        .option("dbtable", "gameclicks")\
+        .load()
+      
+   """
+   The format("jdbc") says that the source of the DataFrame will be using a Java database connection, 
+   the url option is the URL connection string to access the Postgres database, 
+   and the dbtable option specifies the   gameclicks table.
+   """
+   
+   # View Spark DataFrame schema and count rows
+   df.printSchema()
+   df.count()
+   
+   #View contents of DataFrame
+   df.show(5)
+   
+   # filter columns in dataframe 
+   df.select("userid","teamlevel").show(5)
+   
+   # filter rows based on criteria 
+   df.filter(df['teamlevel']>1).select("userid","teamlevel").show(5)
+   
+   # group by column and count 
+   df.groupBy("ishit").count().show()
+   
+   # calculate average and sum 
+   from pyspark.sql.functions import * 
+   df.select(mean('ishit'),sum('ishit')).show()
+   
+   # join two dataframe 
+   df2 = sqlsc.read.format("jdbc")\
+        .option("url",..)
+        .option("dbtable","adclicks")
+        .load()
+        
+   merge = df.join(df2, 'userid')
+   
+   ```
    
   
 
