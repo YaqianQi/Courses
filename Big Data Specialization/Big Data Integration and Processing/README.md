@@ -3,10 +3,10 @@
 **Data Retrieval** 
 **Qeury Language**
 **Database Programming Language**
- - Structure Database: 
+ 1. Structure Database: 
    - SQL Overview and Syntax  
    - Practice: Querying Relational Data with Postgres
- - Semistructured Database: MongoDB 
+ 2. Semistructured Database: MongoDB 
    - Syntax
    `db.collection.find(<query filter>,<projection>).<cursor modifier>`
    `from; where; select `
@@ -73,8 +73,8 @@
    }
    ])
    ```
-   - Practice Query Documents in MongoDB 
-   - Exploring pandas dataframe 
+  3. Practice Query Documents in MongoDB 
+     - Exploring pandas dataframe 
  
 ## Information Integration 
 - Data Fusion: Using data from subset of souces find the true value or true value distribution of a data item
@@ -99,7 +99,47 @@
      - group by, average, min, max, standard deviation, and, or, 
      - union, intersection, difference, concatenation
  - Analytical Operations: Pattern -> insights -> Decision 
- 
+   - Purpose: discover meaningful trends and patterns in data; gain insights into problem; make data-driven decison 
+   - Sample Analytical Operation: Classification; Clustering; Path analysis; Connectivity analysis 
+- Overview of Big Data Processing Systems
+  - Hadoop System: 
+    - Coordination and workflow management: Acquire, prepare, analyze, report,act   
+    - Data Integeration and Processing: Hive, pig, MapReduce, Yarn, Giraph, Storm, Spark, Flink
+      - Excution Model: Batch, Steaming; latency; scalability; programming language; fault tolerance 
+      - MapReuce: batch processing using disk storage; high latency; java; replication
+      - Spark: batch and streaming processing using disk or memory storage; low-latency for small micro-batch size; scala, python, java, r
+      - Flink: batch and steam processing using disk or memory storage; low-latency; java and scala 
+      - Beam: batch and steam processing; low-latency; java and scala 
+      - storm: steam processing; very low-latency; many programming languages
+      - lambda architecture: 
+        - batch layer(hadoop): batch processing/batch data collection 
+        - speead layer(Storm): steam processing/real time data interfaces 
+        - serving layer(Hase): Querying
+      
+    - Data Management and Storage: HDFS, Redis, gephi, mongodb, slor, certica    
+  - Introduction to Apache Spark 
+    - Why spark:Hadoop MapReduce Shortcommings 
+      - Only for map and reduce based computations 
+      - Relies on reading data from HDFS 
+      - Native supprot for java only
+      - No interactive shell support 
+      - No support for streaming 
+    - Basic of Data Analysis with Spark 
+      - Expressive programming model 
+      - In-memory processing 
+      - support for diverse workload 
+      - Interactive shell 
+     - The Spark Stack: SparkSQL, SparkStreamming, MLlib, GraphX
+   - Getting Started with Spark: Architecture and Basic Concept 
+     - In memory processing: 
+       - Spark: the data stores in memory, Resilient distributed databse 
+        - RDD: Distributed across the cluster of machine; divided in partitions, atomic chunks of data; Trach history of each partition, re-run. 
+       - Spark Architecture: 
+         - Driver Program: Spark Context 
+         - Cluster manager 
+         - Worker Nodes: Executor JVM 
+         
+       
  
    
  
