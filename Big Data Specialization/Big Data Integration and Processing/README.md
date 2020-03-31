@@ -73,14 +73,14 @@
    }
    ])
    ```
-  3. Practice Query Documents in MongoDB 
-     - Exploring pandas dataframe 
+3. Practice Query Documents in MongoDB 
+   - Exploring pandas dataframe 
  
 ## Information Integration 
 - Data Fusion: Using data from subset of souces find the true value or true value distribution of a data item
 
 ## Processing Big Data 
-- A Dataflow Approach 
+1. A Dataflow Approach 
   - word count
     - map and reduce application 
     - "split -> map -> shuffle and sort" -> reduce == "split -> Do something -> merge"
@@ -101,7 +101,7 @@
  - Analytical Operations: Pattern -> insights -> Decision 
    - Purpose: discover meaningful trends and patterns in data; gain insights into problem; make data-driven decison 
    - Sample Analytical Operation: Classification; Clustering; Path analysis; Connectivity analysis 
-- Overview of Big Data Processing Systems
+2. Overview of Big Data Processing Systems
   - Hadoop System: 
     - Coordination and workflow management: Acquire, prepare, analyze, report,act   
     - Data Integeration and Processing: Hive, pig, MapReduce, Yarn, Giraph, Storm, Spark, Flink
@@ -117,27 +117,52 @@
         - serving layer(Hase): Querying
       
     - Data Management and Storage: HDFS, Redis, gephi, mongodb, slor, certica    
-  - Introduction to Apache Spark 
-    - Why spark:Hadoop MapReduce Shortcommings 
-      - Only for map and reduce based computations 
-      - Relies on reading data from HDFS 
-      - Native supprot for java only
-      - No interactive shell support 
-      - No support for streaming 
-    - Basic of Data Analysis with Spark 
-      - Expressive programming model 
-      - In-memory processing 
-      - support for diverse workload 
-      - Interactive shell 
-     - The Spark Stack: SparkSQL, SparkStreamming, MLlib, GraphX
-   - Getting Started with Spark: Architecture and Basic Concept 
-     - In memory processing: 
-       - Spark: the data stores in memory, Resilient distributed databse 
-        - RDD: Distributed across the cluster of machine; divided in partitions, atomic chunks of data; Trach history of each partition, re-run. 
-       - Spark Architecture: 
-         - Driver Program: Spark Context 
-         - Cluster manager 
-         - Worker Nodes: Executor JVM 
+ 
+ 3. Introduction to Apache Spark 
+ - Why spark:Hadoop MapReduce Shortcommings 
+   - Only for map and reduce based computations 
+   - Relies on reading data from HDFS 
+   - Native supprot for java only
+   - No interactive shell support 
+   - No support for streaming 
+ - Basic of Data Analysis with Spark 
+   - Expressive programming model 
+   - In-memory processing 
+   - support for diverse workload 
+   - Interactive shell 
+  - The Spark Stack: SparkSQL, SparkStreamming, MLlib, GraphX
+- Getting Started with Spark: Architecture and Basic Concept 
+  - In memory processing: 
+    - Spark: the data stores in memory, Resilient distributed databse 
+     - RDD: Distributed across the cluster of machine; divided in partitions, atomic chunks of data; Trach history of each partition, re-run. 
+    - Spark Architecture: 
+      - Driver Program: Spark Context 
+      - Cluster manager 
+      - Worker Nodes: Executor JVM 
+      
+4. Pratice: Spark 
+```
+# read from HDFS 
+lines = sc.textFile("hdfs:/user/cloudera/words.txt")
+lines.count()
+
+# split each line into words 
+words = line.flatMap(lambda line: line.split(" ")
+
+# Assign inital count value to each word 
+tuples = words.map(lambda word: (word,1))
+
+# sum all word count value 
+counts = tuples.reduceByKey(lamdba a, b:(a+b))
+
+# write word counts to text file in HDFS 
+counts.coalesce(1).saveAsTextFile('hdfs:/user/cloudera/wordcount/outputDir')
+# coalesce: combine all RDD partition into a single partition
+
+# view result
+hadoop fs - copyToLocal wordcount/outputDir/part-0000 count.txt
+more count.txt
+```
          
        
  
