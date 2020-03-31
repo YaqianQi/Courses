@@ -3,10 +3,10 @@
 **Data Retrieval** 
 **Qeury Language**
 **Database Programming Language**
- 1. Structure Database: 
+ 1. **Structure Database: **
    - SQL Overview and Syntax  
    - Practice: Querying Relational Data with Postgres
- 2. Semistructured Database: MongoDB 
+ 2. **Semistructured Database: MongoDB**
    - Syntax
    `db.collection.find(<query filter>,<projection>).<cursor modifier>`
    `from; where; select `
@@ -73,21 +73,21 @@
    }
    ])
    ```
-3. Practice Query Documents in MongoDB 
+3. **Practice Query Documents in MongoDB** 
    - Exploring pandas dataframe 
  
 ## Information Integration 
-- Data Fusion: Using data from subset of souces find the true value or true value distribution of a data item
+- **Data Fusion**: Using data from subset of souces find the true value or true value distribution of a data item
 
 ## Processing Big Data 
-1. A Dataflow Approach 
+1. **A Dataflow Approach** 
   - word count
     - map and reduce application 
     - "split -> map -> shuffle and sort" -> reduce == "split -> Do something -> merge"
        - map: parallelization over the input 
        - shuffle and sort: parallelization over intermediate data 
        - Reduce: parallezation over data group 
- - Data Transformations 
+ - Data Transformations
    - Map: Apply same operation to each member of a collection 
    - Reduce: collecting things that have same 'key'
    - cross/cartesian: Do some process to each pair from two sets 
@@ -101,7 +101,7 @@
  - Analytical Operations: Pattern -> insights -> Decision 
    - Purpose: discover meaningful trends and patterns in data; gain insights into problem; make data-driven decison 
    - Sample Analytical Operation: Classification; Clustering; Path analysis; Connectivity analysis 
-2. Overview of Big Data Processing Systems
+2. **Overview of Big Data Processing Systems**
   - Hadoop System: 
     - Coordination and workflow management: Acquire, prepare, analyze, report,act   
     - Data Integeration and Processing: Hive, pig, MapReduce, Yarn, Giraph, Storm, Spark, Flink
@@ -118,7 +118,7 @@
       
     - Data Management and Storage: HDFS, Redis, gephi, mongodb, slor, certica    
  
- 3. Introduction to Apache Spark 
+ 3. **Introduction to Apache Spark** 
  - Why spark:Hadoop MapReduce Shortcommings 
    - Only for map and reduce based computations 
    - Relies on reading data from HDFS 
@@ -140,7 +140,7 @@
       - Cluster manager 
       - Worker Nodes: Executor JVM 
       
-4. Pratice: Spark 
+4. **Pratice: Spark**
 ```
 # read from HDFS 
 lines = sc.textFile("hdfs:/user/cloudera/words.txt")
@@ -164,11 +164,11 @@ hadoop fs - copyToLocal wordcount/outputDir/part-0000 count.txt
 more count.txt
 ```
 ## Programming in Spark 
-1. Spark Core: Programming in Spark 
+1. **Spark Core: Programming in Spark**
    - creating RDD: `lines = sc.textFile("hdfs:/user/cloudera/words.txt")'
    - Apply transformation 
    - perform actions 
-2. Spark Core: Transformations 
+2. **Spark Core: Transformations**
    - map: appy function to each element of RDD
   ```
   def lower(line):
@@ -195,13 +195,13 @@ more count.txt
       - groupByKey 
       - Reduce 
     [More Transformation in Spark](https://spark.apache.org/docs/1.2.0/programming-guide.html#transformations)
- 3. Spark Core: Actions
+ 3. **Spark Core: Actions**
     - Driver program -> RDD-> flatmap -> map -> groupbyKey -> collect by Driver Program 
     - common actions: 
       - take(n): copy first n elements 
       - collect(): copy all elements to the driver 
       - reduce(function): aggregate elements with function 
- 4. Spark SQL 
+ 4. **Spark SQL** 
    - Why:
      - Enable querying structured and unstructured aata 
      - provide common query language
@@ -242,7 +242,7 @@ more count.txt
       # count people by zip 
       df.groupBy(zip).count().show()
       ```
-5. Spark MLlib
+5. **Spark MLlib**
    - machine learning library in spark: Distributed implementations  
    - main categories of algo: 
      - machine learning
@@ -276,14 +276,14 @@ more count.txt
       ```
      - utility for ml pipeline 
        - dimensionality reduction, transformation 
-6. Spark Streamming 
+6. **Spark Streamming**  
    - scalable processing for real time analysis, data streams converted to discrete RDDs, 
    - Souce: kafka, flume, HDFS, S3, twitter 
    - create and processing DStreams 
      - Streaming Source: [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]
      - Discretize (batch length 2) : [b1,b2,b3,b4,b5] 
      - Transformation(window size: 4, sliding interval:2) [b1,b2],[b2,b3],[b3,b4],[b4,b5](How many entries in 1 unit; how many entris needs to move to next)
-7. Spark GraphX
+7. **Spark GraphX**
    - GraphX is api for graphs and graph-parallel computation 
    
   
