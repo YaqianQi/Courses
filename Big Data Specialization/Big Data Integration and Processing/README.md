@@ -3,8 +3,8 @@
 **Data Retrieval** 
 **Qeury Language**
 **Database Programming Language**
- 1. **Structure Database: **
-   - SQL Overview and Syntax  
+ 1. **Structure Database:**
+   - SQL Overview and Syntax 
    - Practice: Querying Relational Data with Postgres
  2. **Semistructured Database: MongoDB**
    - Syntax
@@ -119,7 +119,7 @@
     - Data Management and Storage: HDFS, Redis, gephi, mongodb, slor, certica    
  
  3. **Introduction to Apache Spark** 
- - Why spark:Hadoop MapReduce Shortcommings 
+ - Why:Hadoop MapReduce Shortcommings 
    - Only for map and reduce based computations 
    - Relies on reading data from HDFS 
    - Native supprot for java only
@@ -189,12 +189,11 @@ more count.txt
   words_RDD.filter(starts_with_a).collect()
   ```
   - Coalesce: reduce the number of partitions 
-  - Wide Transformations 
+  - Wide Transformations [More Syntax Transformation in Spark](https://spark.apache.org/docs/1.2.0/programming-guide.html#transformations)
     - word count: 
       - key: word, value: frequence 
       - groupByKey 
       - Reduce 
-    [More Transformation in Spark](https://spark.apache.org/docs/1.2.0/programming-guide.html#transformations)
  3. **Spark Core: Actions**
     - Driver program -> RDD-> flatmap -> map -> groupbyKey -> collect by Driver Program 
     - common actions: 
