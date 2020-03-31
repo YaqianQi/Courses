@@ -163,9 +163,132 @@ counts.coalesce(1).saveAsTextFile('hdfs:/user/cloudera/wordcount/outputDir')
 hadoop fs - copyToLocal wordcount/outputDir/part-0000 count.txt
 more count.txt
 ```
-         
-       
- 
+## Programming in Spark 
+1. Spark Core: Programming in Spark 
+   - creating RDD: `lines = sc.textFile("hdfs:/user/cloudera/words.txt")'
+   - Apply transformation 
+   - perform actions 
+2. Spark Core: Transformations 
+   - map: appy function to each element of RDD
+  ```
+  def lower(line):
+      return line.lower()
+  lower_text_RDD = text_RDD.map(lower)
+  ```
+  - faltmap:map then flatten output 
+  ```
+  def split_words(line):
+      return line.split()
+  words_RDD = text_RDD.flatMap(split_words)
+  words_RDD.collect()
+  ```
+  - filter: keep only elements where function is true
+  ```
+  def starts_with_a(word):
+      return word.lower().startswith("a")
+  words_RDD.filter(starts_with_a).collect()
+  ```
+  - Coalesce: reduce the number of partitions 
+  - Wide Transformations 
+    - word count: 
+      - key: word, value: frequence 
+      - groupByKey 
+      - Reduce 
+    [More Transformation in Spark](https://spark.apache.org/docs/1.2.0/programming-guide.html#transformations)
+ 3. Spark Core: Actions
+    - Driver program -> RDD-> flatmap -> map -> groupbyKey -> collect by Driver Program 
+    - common actions: 
+      - take(n): copy first n elements 
+      - collect(): copy all elements to the driver 
+      - reduce(function): aggregate elements with function 
+ 4. Spark SQL 
+ - Spark SQL
+   - Why:
+     - Enable querying structured and unstructured aata 
+     - provide common query language
+     - Has APIs for scala, java, python and convert the result to RDD
+   - Rational Operations 
+   - Connect to variety of database: connects to all BI tools that supprot JDBC, ODBC 
+   - Deploy business integllignece tools 
+   - How to go relational in spark?
+     - step 1: sqlcontext: create dataframe from RDD, HIVE, data source  
+     ``` 
+     from pyspark.sql import SQLContext
+     sqlContext = SQLContext(sc)
+     # Jason -> DataFrame 
+     df = sqlContext.read.json("/filename.json")
+     df.show()
+     # register the dataframe as a table 
+     df.registerTempTable("Table")
+     # run sql 
+     Output = sqlContext.sql("select * from Table where...)
+      ```
+      - dataframe basic 
+      ```
+      # show table 
+      df.show()
+      
+      # print the schema 
+      df.printSchema()
+      
+      # select only the "X" column 
+      df.select("X").show()
+      
+      # select everybody, but increment the discount by 5% 
+      df.select(df['name'],df['discount']+5).show()
+      
+      # select people height greater than 4.0 ft
+      df.filter(df['height'] > 4.0).show()
+      
+      # count people by zip 
+      df.groupBy(zip).count().show()
+      ```
+5. Spark MLlib
+   - machine learning library in spark: Distributed implementations  
+   - main categories of algo: 
+     - machine learning
+       - classification, regression, clustering 
+       - evaluation metrics 
+     ```
+     ## Example 1: classification 
+     # read and parse data 
+     data = sc.textFile("data.txt")
+     # decision tree for classification 
+     model = DecisionTree.trainClassifier(parsedData, numClasses = 2)
+     print(model.toDebugString())
+     model.save(sc,"decisionTreeModel")
+     
+     ## Example 2:clustering 
+     data = sc.textFile("data.txt")
+     parsedData = data.map(lambda line: array([float(x) for x in line.split(" ")]))
+     # k-means model for clustering 
+     clusters = Kmeans.train(parsedData, k = 3)
+     print(clusters.centers)
+     ```
+     - stat
+       - summary stats, sampling 
+      ```
+      from pyspark.mllib.stat import Statistics 
+      # data as RDD of vector
+      dataMatrix = sc.parallelize([[1,2,3,],[4,5,6]])
+      # compute column summary stat 
+      summary = Statistics.colStats(dataMatrix)
+      print(summary.mean(), summary.variance, summary.numNonzeros)
+      ```
+     - utility for ml pipeline 
+       - dimensionality reduction, transformation 
+6. Spark Streamming 
+   - scalable processing for real time analysis, data streams converted to discrete RDDs, 
+   - Souce: kafka, flume, HDFS, S3, twitter 
+   - create and processing DStreams 
+     - Streaming Source: [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]
+     - Discretize (batch length 2) : [b1,b2,b3,b4,b5] 
+     - Transformation(window size: 4, sliding interval:2) [b1,b2],[b2,b3],[b3,b4],[b4,b5](How many entries in 1 unit; how many entris needs to move to next)
+7. Spark GraphX
+   - GraphX is api for graphs and graph-parallel computation 
+   
+  
+
    
  
 
