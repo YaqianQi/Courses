@@ -36,5 +36,20 @@
 - **Functions**: two sets X, Y. If and only it associates each element of the X set to **exactly one** elemenmt of the Y set. X: domian/set of arguments, Y: Codomain/set of values.
   - Ways to describle function: table of values; algebraic; Graphical 
   - **Function Graph**: a certain curve on the plane, (x, f(x)), x belongs to the function domain. 
+- **Arithmetic and Compostition**
+  - Elementary function: constant, exponential, logarithmic, powers, trigonometric ...
+    - By applying arithmetic operation +, -, *, / can changefunctions domain and codomain, but keeps the rsult in calss of elementary functions. 
+  - **Compostion**: The result of consequent application of functions f and g is called a composite function or composition. g(f(x)) *F:X->Y AND Y->Z; f:map(x)-> Y and g:map(Y)-> Z
+  - **Graph Transformation**:
+    - Some simple example transformation 
+      - **Vertical shift**: y = f(x) -> f(x) + c
+      - **Horizontal shift**: y = f(x) -> f(x+c)
+      - **Vertical contraction**: y = f(x) -> y = c * f(x)
+      - **Horizontal contraction**: y = f(x) -> y = f(c * x)
+      - **Absolute varaible**: y = f(|x|)
+      - **Absolute value**: y = |f(x)|
+      
+      
+  
   
 
