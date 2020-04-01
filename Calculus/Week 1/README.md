@@ -19,7 +19,7 @@
     - **Mapping**:ordered realtionship between elements of X and Y. (two sets X and Y)/ The rules takes an element from X and tells the set of mapped elements from Y
     - Logic notation: "for all"; "exist"
          
-4. Suplement Material 
+4. **Suplement Material** 
 - Axiomatic definition
   - x+y=y+x, x⋅y=y⋅x (it is easy: the commutative rule)
   - (x+y)+z=x+(y+z), (x⋅y)⋅z=x⋅(y⋅z) (associativity)
@@ -31,3 +31,10 @@
   - For any two real numbers one is able to say a>b, a<b or a=b.
   - This order is transitive: if a<b, b<c, then a<c.
 - completeness. ℝ=A∪B, A∩B=∅, such as any element a∈A is smaller than any element b∈B. Then there is a pivot real number c∈ℝ that a≤c≤ b a≤c≤b for any aa and bb elements from the corresponding sets.
+
+5. **Functions**
+- **Functions**: two sets X, Y. If and only it associates each element of the X set to **exactly one** elemenmt of the Y set. X: domian/set of arguments, Y: Codomain/set of values.
+  - Ways to describle function: table of values; algebraic; Graphical 
+  - **Function Graph**: a certain curve on the plane, (x, f(x)), x belongs to the function domain. 
+  
+
