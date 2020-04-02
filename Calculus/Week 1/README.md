@@ -48,8 +48,60 @@
       - **Horizontal contraction**: y = f(x) -> y = f(c * x)
       - **Absolute varaible**: y = f(|x|)
       - **Absolute value**: y = |f(x)|
-      
-      
-  
+    - *Example: −3f(2∣x∣+1)+3. Shrink in 2 times horizontally; move to left 1; scale -3 vertically and move up 3
+6. **Sequence** 
+   - **Sequence**: function of natural domain.(Some number set of real numbers) 
+     - The domain of the sequence is discrete 
+     - The sequence is the set of couted real numbers 
+     - The sequence's domain does not necessarily include all N 
+     - The number of elements in the sequences is infinite 
+   - **limits of sequence**
+     - Definition: The real number that resembles the sequence the most as the element's number infinitely grows(approach infinity)
+       - Notation: *lim(an) = c: if c is the limit, we guarantee that the sequence stops to deviate significantly from it starting from some point.*
+     - Examples: 
+       - EX1: an = 1/ n. lim(an) = 0. The sequence has limits equals to 0, it's called **infinitesimal**
+       - EX2: an = cos(x)/n. lim(an) = 0The product of bounded and infinitesimal is infinitesimal 
+       - EX3: an = 2n + 1. limm(an) = +infinite. The sequence is unbounded and approaches to positive infinite. 
+       - EX4: an = sin(pi * n) = (-1) ^ n. The sequence has no limit or it does not converge. 
+     - **Limit of Sequences: Arithmetic Rules**
+       - Some rules: note that's only true if all right side limits exist  
+          - sum / difference: lim an = lim(bn +/- cn) 
+          - product: lim (bn * cn)
+          - division: lim(bn / cn)
+       - Ex1: an = (n^2 + n)/ (2n^2 - 6n + 5) = numerate/n^2/denominator/n^2 = 1/2  
+       - Ex2: an = (5 * 4^1/n + 2^1/n -6) / (4^1/n - 6 * 2^1/2 + 5)(*hint lim(2^1/n) = 1 = t) =  5 * t + 6 / (t - 5) = -11/4
+     - **Newton's binomial theorem**
+       - (a + b) ^ n = nC0 * a^ n + nC1 * a^ (n-1) * b + nC2 * a^ (n-2) * b^2+...+ nCn * b^n
+     - **Series**
+       - Sn = a1 + a2 + a3 +..+ an. The limit of sn is called the sum of the series(Upon its existence the series is called convergent).
+         - EX1: Sn = 1 + 1/2 + 1/3 + ...+ 1/n.This series is not converge. 
+         - EX2: Sn = 1 + p + p^2 + ... + p^n *(geometrical progression等比数列)* (1-p^(n+1))/(1-p) 
+           - if p < 1, convergent; sn = 1/(1-p)
+           - if p > 1, divergent. 
+         - EX3: Sn = p + 2p^2 + ...+ np^n
+           - col0: p + p^2 + p^3 + ...+p^n -> sn = p /(1-p)
+           - col1: p^2 + p^3 + .. + p^n -> sn = p^2/(1-p)
+           - sum = 1/(1-p) + p^2/(1-p) + p^3/ (1-p) +... = p/(1-p)^2 
+      - ** The Definition of e**
+        - en = (1+ 1/n) ^ n; lim(n->+inf) en = e 
+        - **Monotone(单调）convergence theorem**:if a sequence increases and an has upper boundary, then it converges. Same applies for the case of decreasing squence with lower boudary.   
+        - **Prove en is Monotone and bounded** 
+     - The indeterminate forms 
+       - **Indeterminate form**:inf/inf, 0/0, 1^inf, 0^0, inf-inf, 0 * inf, 0 * inf. 
+         - The apprearance of the indeterminate forms doesn't give an answer. It only implies necessity of further transformations. 
+       - EX1: an = (n^2 + 1)/ n = (n + 1/n) = +inf.
+       - EX2: an = (n+1)/n^2 = (1/n + 1)/n = 0
+     - Comparison between Polynomial(n^k), Exponential(a^n) and Logarithmic (lnn)^k Functions
+       - **prove**: lim(n->+inf) n^k/a^n = 0; (ln(n))^k / n^k = 0
+     - **limit of recurrence sequence
+       - **revurrence sequence**: define n-th element through it's previous values. Xn+1 = f(xn,n) or Xn+1 = f(Xn, Xn-1..,n)
+         - EX1: Fibonacci sequqnece x1 = x2 = 1, xn+1 = xn + xn-1, xn = 1/sqrt(5) * ((1+sqrt(5))/2 ^n - ((1-sqrt(5))/2)^n)
+         - EX2: **Babylonian algorithm**: 
+           - Monotone convergence theorem. 
+           - make an initial guess; iterate: Xn+1 = (Xn + A/Xn)/2
+           - set lim Xn = C, c = 1/2(C + A/C)
+           - c = +/-sqrt(A)
+         - EX3: Sn = (-1)^n, s1 = 1, sn+1 = 1-sn, c = 1 - c => c = 1/2. However, we know there is no limit for this sequence. This happpens because we assume the limit exist. So before we do the recurrent sequence estimation, we needs to prove the sequence is monotonic and  bounded.  
+       
   
 
