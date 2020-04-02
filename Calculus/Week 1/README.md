@@ -20,35 +20,35 @@
     - Logic notation: "for all"; "exist"
          
 4. **Suplement Material** 
-- Axiomatic definition
-  - x+y=y+x, x⋅y=y⋅x (it is easy: the commutative rule)
-  - (x+y)+z=x+(y+z), (x⋅y)⋅z=x⋅(y⋅z) (associativity)
-  - (x+y)⋅z=x⋅z+y⋅z (distributivity)
-  - Existence of two neutral elements 1 and 0: a⋅1=a, a+0=a.
-  - Existence of the inverse elements (except 0): a+(−a)=0, a⋅a−1=1
-   - Non-triviality 0≠1
-- the ability to compare two numbers.
-  - For any two real numbers one is able to say a>b, a<b or a=b.
-  - This order is transitive: if a<b, b<c, then a<c.
-- completeness. ℝ=A∪B, A∩B=∅, such as any element a∈A is smaller than any element b∈B. Then there is a pivot real number c∈ℝ that a≤c≤ b a≤c≤b for any aa and bb elements from the corresponding sets.
+   - Axiomatic definition
+     - x+y=y+x, x⋅y=y⋅x (it is easy: the commutative rule)
+     - (x+y)+z=x+(y+z), (x⋅y)⋅z=x⋅(y⋅z) (associativity)
+     - (x+y)⋅z=x⋅z+y⋅z (distributivity)
+     - Existence of two neutral elements 1 and 0: a⋅1=a, a+0=a.
+     - Existence of the inverse elements (except 0): a+(−a)=0, a⋅a−1=1
+      - Non-triviality 0≠1
+   - the ability to compare two numbers.
+     - For any two real numbers one is able to say a>b, a<b or a=b.
+     - This order is transitive: if a<b, b<c, then a<c.
+   - completeness. ℝ=A∪B, A∩B=∅, such as any element a∈A is smaller than any element b∈B. Then there is a pivot real number c∈ℝ that a≤c≤ b a≤c≤b for any aa and bb elements from the corresponding sets.
 
 5. **Functions**
-- **Functions**: two sets X, Y. If and only it associates each element of the X set to **exactly one** elemenmt of the Y set. X: domian/set of arguments, Y: Codomain/set of values.
-  - Ways to describle function: table of values; algebraic; Graphical 
-  - **Function Graph**: a certain curve on the plane, (x, f(x)), x belongs to the function domain. 
-- **Arithmetic and Compostition**
-  - Elementary function: constant, exponential, logarithmic, powers, trigonometric ...
-    - By applying arithmetic operation +, -, *, / can changefunctions domain and codomain, but keeps the rsult in calss of elementary functions. 
-  - **Compostion**: The result of consequent application of functions f and g is called a composite function or composition. g(f(x)) *F:X->Y AND Y->Z; f:map(x)-> Y and g:map(Y)-> Z
-  - **Graph Transformation**:
-    - Some simple example transformation 
-      - **Vertical shift**: y = f(x) -> f(x) + c
-      - **Horizontal shift**: y = f(x) -> f(x+c)
-      - **Vertical contraction**: y = f(x) -> y = c * f(x)
-      - **Horizontal contraction**: y = f(x) -> y = f(c * x)
-      - **Absolute varaible**: y = f(|x|)
-      - **Absolute value**: y = |f(x)|
-    - *Example: −3f(2∣x∣+1)+3. Shrink in 2 times horizontally; move to left 1; scale -3 vertically and move up 3
+   - **Functions**: two sets X, Y. If and only it associates each element of the X set to **exactly one** elemenmt of the Y set. X: domian/set of arguments, Y: Codomain/set of values.
+     - Ways to describle function: table of values; algebraic; Graphical 
+     - **Function Graph**: a certain curve on the plane, (x, f(x)), x belongs to the function domain. 
+   - **Arithmetic and Compostition**
+     - Elementary function: constant, exponential, logarithmic, powers, trigonometric ...
+       - By applying arithmetic operation +, -, *, / can changefunctions domain and codomain, but keeps the rsult in calss of elementary functions. 
+     - **Compostion**: The result of consequent application of functions f and g is called a composite function or composition. g(f(x)) *F:X->Y AND Y->Z; f:map(x)-> Y and g:map(Y)-> Z
+     - **Graph Transformation**:
+       - Some simple example transformation 
+         - **Vertical shift**: y = f(x) -> f(x) + c
+         - **Horizontal shift**: y = f(x) -> f(x+c)
+         - **Vertical contraction**: y = f(x) -> y = c * f(x)
+         - **Horizontal contraction**: y = f(x) -> y = f(c * x)
+         - **Absolute varaible**: y = f(|x|)
+         - **Absolute value**: y = |f(x)|
+       - *Example: −3f(2∣x∣+1)+3. Shrink in 2 times horizontally; move to left 1; scale -3 vertically and move up 3
 6. **Sequence** 
    - **Sequence**: function of natural domain.(Some number set of real numbers) 
      - The domain of the sequence is discrete 
@@ -56,7 +56,7 @@
      - The sequence's domain does not necessarily include all N 
      - The number of elements in the sequences is infinite 
    - **limits of sequence**
-     - Definition: The real number that resembles the sequence the most as the element's number infinitely grows(approach infinity)
+     - **Definition**: The real number that resembles the sequence the most as the element's number infinitely grows(approach infinity)
        - Notation: *lim(an) = c: if c is the limit, we guarantee that the sequence stops to deviate significantly from it starting from some point.*
      - Examples: 
        - EX1: an = 1/ n. lim(an) = 0. The sequence has limits equals to 0, it's called **infinitesimal**
@@ -82,8 +82,8 @@
            - col0: p + p^2 + p^3 + ...+p^n -> sn = p /(1-p)
            - col1: p^2 + p^3 + .. + p^n -> sn = p^2/(1-p)
            - sum = 1/(1-p) + p^2/(1-p) + p^3/ (1-p) +... = p/(1-p)^2 
-      - ** The Definition of e**
-        - en = (1+ 1/n) ^ n; lim(n->+inf) en = e 
+      - **The Definition of e**
+        - **en = (1+ 1/n) ^ n; lim(n->+inf) en = e** 
         - **Monotone(单调）convergence theorem**:if a sequence increases and an has upper boundary, then it converges. Same applies for the case of decreasing squence with lower boudary.   
         - **Prove en is Monotone and bounded** 
      - The indeterminate forms 
@@ -93,8 +93,8 @@
        - EX2: an = (n+1)/n^2 = (1/n + 1)/n = 0
      - Comparison between Polynomial(n^k), Exponential(a^n) and Logarithmic (lnn)^k Functions
        - **prove**: lim(n->+inf) n^k/a^n = 0; (ln(n))^k / n^k = 0
-     - **limit of recurrence sequence
-       - **revurrence sequence**: define n-th element through it's previous values. Xn+1 = f(xn,n) or Xn+1 = f(Xn, Xn-1..,n)
+     - **limit of recurrence sequence**
+       - **recurrence sequence**: define n-th element through it's previous values. Xn+1 = f(xn,n) or Xn+1 = f(Xn, Xn-1..,n)
          - EX1: Fibonacci sequqnece x1 = x2 = 1, xn+1 = xn + xn-1, xn = 1/sqrt(5) * ((1+sqrt(5))/2 ^n - ((1-sqrt(5))/2)^n)
          - EX2: **Babylonian algorithm**: 
            - Monotone convergence theorem. 
