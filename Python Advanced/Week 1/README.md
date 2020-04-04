@@ -19,6 +19,31 @@
      - Index is number/list/object.., value is True or False
      - add: change value to True; remove change value to False
       - Collison: append to the list of chain whose index = value % size_len (hash function: transform values in non-negative integer)
+   - Operation: 
+     - Within set 
+         - len(s)	Return the number of elements in set s (cardinality of s)
+         - x in s	Test x for membership in s
+         - x not in s	Test x for non-membership in s
+         - s.add(x)	Add element x to the set
+         - s.remove(x)	Remove element x from the set. Raises KeyError if x is not contained in the set
+         - s.discard(x)	Remove element x from the set if it is present
+         - s.pop()	Remove and return an arbitrary element from the set. Raises KeyError if the set is empty
+         - s.copy()	Return a new set with a shallow copy of s
+         - s.clear()	Remove all elements from the set
+      - Two set 
+        - s == t		Test sets to equality
+        - s <= t	s.issubset(t)	Test whether every element in s is in t
+        - s < t	s <= t and s != t	Test whether s is a proper subset of ​t
+        - s >= t	s.issuperset(t)	Test whether every element in t is in s
+        - s > t	s >= t and s != t	Test whether s is a proper superset of t
+        - s | t	s.union(t)	Return a new set with elements from s and t
+        - s & t	s.intersection(t)	Return a new set with elements common to s and t
+        - s - t	s.difference(t)	Return a new set with elements in s that are not in t
+        - s ^ t	s.symmetric_difference(t)	Return a new set with elements in either s or t but not both
+        - s |= t	s.update(t)	Update s, adding elements from t
+        - s &= t	s.intersection_update(t)	Update s, keeping only elements found in it and t
+        - s -= t	s.difference_update(t)	Update s, removing elements found in t
+        - s ^= t	s.symmetric_difference_update(t)	Update s, keeping only elements found in either set, but not in both
    - Pros:
      - fast search
      - remove duplicates 
@@ -139,5 +164,4 @@
             dictionary.clear() remove all 
 
             ``` 
-       - 
   
