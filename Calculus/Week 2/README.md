@@ -38,4 +38,20 @@
    - If f(x) = O(g(x)), for some neighborhood of the point x = a, one could find a constant c > 0 that |f(x)| <= c|g(x)|
 3. Little-o
    - Which function is smaller or faster growing 
-   
+   - Notation: f(x) = o(g(x))
+     - f(x) = a(x) * g(x), a(x)->0
+     - f(x) = o(g(x)) => f(x)/g(x) -> 0
+4. Asymptotic and Binomials
+   - (n - l)/(k - l) > n/k, (l < k < n)
+   - (n/k) <= n chose k
+   - (n/k) <= n chose k <= n^k / k!
+ ## Multivariate Functions
+ 1. **Definitions**
+    - f(x1,x2,..,xn), R^n -> R. Normally, f(x,y) or f(x1, x2)
+    - The concept of domain, range, support remains the same. The graph of the multivariate function exists in th R^(1+n) and is called surface. 
+    - R3 as (x, y, f(x,y)) si usual three-dimensioanl surface 
+    - f(x,y) = C, c: function's level or (c-level)
+ 2. **Limits**
+   - f(x,y) = c => |f(x,y) - c| < eps
+ 3. **Example**
+    - find all possible situation    
