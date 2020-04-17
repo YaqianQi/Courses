@@ -25,6 +25,19 @@
  5. **Derivative: chain rule**
     - f(g(x))' = f'(g(x)) * g'(x)
  6. **Log euquotion**
-    - y = x ^ x
+    - find a tangent line: y = x ^ x, x = 1/e
+      - Hint: y = f(a) + f'(a) * (x-a)
  7. **Inverse Function**
     - y = tanx 
+## Linear Objects Associated with Differentiability 
+1. **Tangent Line: Equation**
+   - y = f(a) + f'(a) * (x-a)
+   - Example x^x
+2. **Linear Approximations**
+  - Example: calculate sin 29 degree
+    - Approach: use sin30 to approach by f(x) = f(a) + f'(x)*(x-a) + o(x-a); a = pi/6, x = pi/6 - pi/180 
+3. **Mean Value Theorem**
+  - f(x) is continuous on the closed interval [a,b]
+  - f(x) is differentiable on the open interval (a,b)
+  - there is a number c such a < c < b and f(b)-f(a) = f'(c)(b-a) 
+  
