@@ -39,6 +39,10 @@
                continue 
            result.append(record)
       ```
+5. **Error messge**
+   - Data Type not match: `ValueError`
+   - Data do not match length: `IndexError`
+   - Can not read error in json: `json.JSONDecodeError`
 ## Advanced for-loop
 1. **map**: apply the operation to each items in container  
    - **map(function, container)** #   `map(preprocess, queries)`
@@ -120,7 +124,7 @@
       for word in word_lst:
          f.write(word)
   ```
-3. JSON 
+3. **JSON** 
    - Json is a very popular textual format. when you dump your data, you get a text, a stream. 
    - Data format: enable devices and programming languages to communicate each other regardless of what programming languages are used. 
    - data type: 
@@ -140,6 +144,36 @@
          json.dump(request, f)
          
     with open("request.json") as f:
-         x = json.load(f)
+         x = json.load(f) # only suitable for one line 
+         for line in f:
+            print(line) # for multiple line 
     ```
-  
+## HW Summary 
+1. **map**: apply operation to container. `map(function, container)`
+2. **filter**: only return match value. `filter(function, container)` 
+3. **sorted**: `sorted(container, key=lambda x:x[i], reverse=?)`
+4. **zip**: merge 2 list together into lazy entity.`zip(list1, list2)`
+5. print list in elegent way: `print(*list, sep="\n")` 
+6. **Json** 
+   - open jason file and read line 
+     ```
+     with open("file.json") as f:
+          for line in f:
+            print(line) 
+     ```
+   - store the value to json file 
+   ````
+      with open("file.json", 'w') as f
+           json.dump(jason_str, f) 
+   ````
+7. **Error**:
+   - Value doesn't match: `Except ValueError`
+   - Can't read: `json.JSONDecodeError`
+8. **Functional Programming:**
+   - **defaultdict** 
+   ```
+   from collection import defaultdict
+   word_dict = defaultdict(int/dict/[]) 
+   word_dict[key] = 1 # automatic set it to the type you want without "if not existed then" initialization 
+   ```
+   
