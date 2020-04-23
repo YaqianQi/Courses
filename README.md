@@ -12,7 +12,7 @@
 > - [x] National Research University Higher School of Economics
 > - [x] Data Mining and Analytics
 
-- [x] 3. Bayesian Analysis
+- [x] 3. CS229 - Machine Learning 
 
 - [x] 4. Deep Learning 
 > - [x] Introduction to Deep Learning(HSE)
