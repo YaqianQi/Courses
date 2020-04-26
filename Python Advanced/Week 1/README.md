@@ -9,8 +9,7 @@
      - container stores reference 
      - When the variable changed, it assigned other reference to the variable, it doens't change the original reference number
      - when you pass the value to other variable, you pass reference
-     - **Deep copy** if you want to modified value without affacting original value in mutable variables. 
-     ```import copy; copy.deepcopy();````
+     - **Deep copy** if you want to modified value without affacting original value in mutable variables.  `import copy; copy.deepcopy();`
 2. **Sets**
    - A set is an unordered container of hashable objects.
       - Ordered container like list, tuple can get access to the value by index
