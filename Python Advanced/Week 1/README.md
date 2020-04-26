@@ -124,7 +124,7 @@
      ```
   3. **Dictionary**
     - **Introduction** 
-      - Initialize dictionary 
+      - Initialize dictionary, key has to be immutable  
          - curly braces
             ```
             {'USA':2, 'France':2, "Germany":1}
