@@ -46,7 +46,18 @@
      - @x.setter: set the attribute without call function 
      - @property: return property 
   ```
-  
+   @property
+    def name(self):
+        print("Access Name")
+        return self._name
+    @name.setter
+    def name(self, new_name):
+        print("Change Name")
+        if not isinstance(new_name, str):
+            raise TypeError("New name must be a string")
+        self._name = new_name 
+  class_name().name #return self._name
+  class_name().name = 'Gorge' #change self._name = "Gorge"
   ```
 6. **Functions with variable number of arguments**
    - args,
