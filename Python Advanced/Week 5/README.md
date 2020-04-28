@@ -60,18 +60,18 @@
   class_name().name = 'Gorge' #change self._name = "Gorge"
   ```
 6. **Functions with variable number of arguments**
-   - args,
+   - **args**
      - pass everything in tuple 
      - *args: iterable 
      - args: tuple 
-  ```
-  def my_print(x, y, *args):
-      # all other documents are packed in tuple 
-      print(type(args))
-      print(*args)
-      print("MY_PRINT", x, y, args)
-  ```
-   - kwargs
+     ```
+     def my_print(x, y, *args):
+         # all other documents are packed in tuple 
+         print(type(args))
+         print(*args)
+         print("MY_PRINT", x, y, args)
+     ```
+   - **kwargs**
      - dictionary 
      - pass unknown numbers of keywords 
      ```
