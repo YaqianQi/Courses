@@ -2,10 +2,15 @@
 ## Advanced Python Features 
 1. **Magic Methods**: can directly apply to object 
    - __init__
-   - __len__
-   - __getitem__
-   - __contains__
-   - __call__
+   - __len__: len(object)
+   - __getitem__: object[id]
+   - __contains__: a in object
+   - __call__: object()
+   - __sub__: "-"
+   - __mul__:"*"
+   _ __add__:"+"
+   _ __str__: str(object)
+   _ __eq__: "=="
 2. **Inheritance** 
    - attributes 
    ```
@@ -45,23 +50,23 @@
    - **Common decorator**
      - @x.setter: set the attribute without call function 
      - @property: return property 
-  ```
-   @property
-    def name(self):
-        print("Access Name")
-        return self._name
-    @name.setter
-    def name(self, new_name):
-        print("Change Name")
-        if not isinstance(new_name, str):
-            raise TypeError("New name must be a string")
-        self._name = new_name 
-  class_name().name #return self._name
-  class_name().name = 'Gorge' #change self._name = "Gorge"
-  ```
+        ```
+         @property
+          def name(self):
+              print("Access Name")
+              return self._name
+          @name.setter
+          def name(self, new_name):
+              print("Change Name")
+              if not isinstance(new_name, str):
+                  raise TypeError("New name must be a string")
+              self._name = new_name 
+        class_name().name #return self._name
+        class_name().name = 'Gorge' #change self._name = "Gorge"
+        ```
 6. **Functions with variable number of arguments**
    - **args**
-     - pass everything in tuple 
+     - stores in tuple 
      - *args: iterable 
      - args: tuple 
      ```
@@ -72,7 +77,7 @@
          print("MY_PRINT", x, y, args)
      ```
    - **kwargs**
-     - dictionary 
+     - stores in dictionary 
      - pass unknown numbers of keywords 
      ```
        def my_print(*args, **kwargs):
