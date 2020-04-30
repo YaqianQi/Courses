@@ -20,5 +20,18 @@
    - **Integrable in elementary function**: if it's indefinite integral can be written by the fininite number of arithmetic operation and compositions of elementary function.
    - **Rational Fraction**: R(x) = P(x)/Q(x). p(x) and Q(x) are rational polynomials. 
      - Rational functions are always integrable 
-     
+## Definite Integral: Area Under Curve and Fundamental Theorem of Calculus 
+1. **Definite Integral**
+   - Definite integral: lim d->0 S(t, f, t) = Integral f(x) dx exists independently from t and actual partition
+2. **Definite Integral: Existence**
+   - lower sum < S(t,f,t) < Upper sum and they all get the same sum. Then exist 
+3. **Definite Integral: Sufficient Conditions**
+   - The function monotonically rises or fall for all the segment 
+   - The function has no discountinuations for all the segment 
+   - Example: f(x) = x^2, [a,b] = [1,0] calculate the under line area 
+4. **Fundamental Theorem of Calculus**
+   - Intg (a,b)f(x)dx = F(b) - F(a)
+   
+ 
+
 
