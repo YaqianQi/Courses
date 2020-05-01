@@ -39,7 +39,10 @@
 6. **Improper Integrals: Examples and Comparison Rule**
    - Example: integral 1 to +inf x^(-a)dx, 
      - a > 1, converge; otherwise, not converge 
-   - 
+7. **Numerical Methods of Integration**
+   - **midpoint rule**: integral a to b f(x)dx = (b-a)*f((a+b)/2)
+   - **Trapezoidal rule**: integral a to b f(x)dx = (b-a)((f(a)+f(b))/2)
+   - **simpson's rule**: integral a to b f(x)dx = (b-a)/6*(f(a)+f(b)+4*f((a+b)/2)) 
  
 
 
