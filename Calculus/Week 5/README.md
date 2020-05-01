@@ -31,7 +31,15 @@
    - Example: f(x) = x^2, [a,b] = [1,0] calculate the under line area 
 4. **Fundamental Theorem of Calculus**
    - Intg (a,b)f(x)dx = F(b) - F(a)
-   
+5. **Improper Integrals**
+   - integral from a to +inf f(x)dx = lim b->+inf f(x)dx 
+      - converges: exist limit 
+      - not converge: non-existence or +inf
+   - Example: integral 0 to +inf e^(-ax) dx 
+6. **Improper Integrals: Examples and Comparison Rule**
+   - Example: integral 1 to +inf x^(-a)dx, 
+     - a > 1, converge; otherwise, not converge 
+   - 
  
 
 
