@@ -43,6 +43,14 @@
    - **midpoint rule**: integral a to b f(x)dx = (b-a)*f((a+b)/2)
    - **Trapezoidal rule**: integral a to b f(x)dx = (b-a)((f(a)+f(b))/2)
    - **simpson's rule**: integral a to b f(x)dx = (b-a)/6*(f(a)+f(b)+4*f((a+b)/2)) 
+8. **Multivariate Integrals: Definitions**
+   - integral Integral A f(x,y)dxdy
+9. **Fubini’s theorem**
+   - **Fubini's therom**: consequently by each variable 
+     - Integral a to b (Integral c to d f(x,y) dy) dx 
+     - Example: f(x,y) = x*y^2, [1,3]*[2,5]
+     - Example: f(x,y) = x*y^, A = {x = [0,1], y = 0, y = 2*x}
+10. 
  
 
 
