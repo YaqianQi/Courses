@@ -32,15 +32,7 @@
 > - [x] Object-Oriented Data Structures in C++
 > - [x] Ordered Data Structure
 
-
 - [x] 7. Discrete Math
-- Content 
-  - Basic Combinatorics
-  - Advanced Combinatorics
-  - Discrete Probability
-  - Introduction to Graphs
-  - Basic Graph Parameters
-  - Graphs of Social Networks
 
 - [x] 8. Python Basic 
 
