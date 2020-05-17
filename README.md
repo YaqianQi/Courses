@@ -36,9 +36,9 @@
 
 - [x] 8. Python Basic 
 
-- [ ] 9. Calculus
+- [x] 9. Calculus
 
-- [ ] 10. Python Advance 
+- [x] 10. Python Advance 
 
 *Data Scientist Cheet Sheet*
 
