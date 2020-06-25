@@ -40,5 +40,9 @@
 
 - [x] 10. Python Advance 
 
+- [x] 11. Data Structure 
+
+- [x] 12. Linear Algebra  
+
 *Data Scientist Cheet Sheet*
 
