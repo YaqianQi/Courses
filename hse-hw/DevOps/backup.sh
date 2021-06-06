@@ -3,7 +3,7 @@
 BACKUPDIR=$1 #the directory to backup;
 # test 
 ALGONAME=$2 #the compression algorithm to use (none, gzip, bzip, etc; see tar for details);
-# tgz
+# cvfz
 OUTPUTFILENAME=$3 #the output file name.
 # filename.tgz
 
