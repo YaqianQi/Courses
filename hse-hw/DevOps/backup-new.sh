@@ -41,7 +41,7 @@ XZ="xz"
 
 
 if [ ! -d $BACKUP_DIR ]; then
-	(echo "directory not exist") >& $LOGFILE
+	(echo "Backup directory doesn't exist") >& $ERROR_LOG
 	echo "exit"
 	exit 1
 fi
