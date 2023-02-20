@@ -50,15 +50,15 @@ fi
 # Create the backup archive with the specified compression algorithm
 if [[ "$COMPRESSION_ALGO" == "$TAR"  ]]; then
   ARCHIVE_FILE="$OUTPUT_FILE_NAME.tar.gz"
-  tar  -czvf ARCHIVE_FILE $BACKUP_DIR 2>> $ERROR_LOG; 
+  tar  -czf ARCHIVE_FILE $BACKUP_DIR 2>> $ERROR_LOG; 
 
 elif [[ "$COMPRESSION_ALGO" == "$BZIP" ]] || [[ "$COMPRESSION_ALGO" == "$BZIP2" ]]; then
   ARCHIVE_FILE="$OUTPUT_FILE_NAME.tar.bz2"
-  tar  -czvf ARCHIVE_FILE $BACKUP_DIR 2>> $ERROR_LOG; 
+  tar  -czf ARCHIVE_FILE $BACKUP_DIR 2>> $ERROR_LOG; 
 
 elif [[ "$COMPRESSION_ALGO" == "$XZ"  ]]; then
   ARCHIVE_FILE="$OUTPUT_FILE_NAME.tar.xz"
-  tar -cJvf ARCHIVE_FILE $BACKUP_DIR 2>> $ERROR_LOG; 
+  tar -cJf ARCHIVE_FILE $BACKUP_DIR 2>> $ERROR_LOG; 
 
 else 
   echo "Invalid compression option." 2>> $ERROR_LOG;
