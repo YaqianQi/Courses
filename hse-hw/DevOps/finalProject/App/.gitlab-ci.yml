@@ -1,0 +1,12 @@
+stages:
+  - build
+build:
+  stage: build
+  script:
+    - IMAGE="$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME"
+    - docker build -t $IMAGE .
+    - docker push $IMAGE
+  tags:
+    - docker
+  only:
+    - tags
